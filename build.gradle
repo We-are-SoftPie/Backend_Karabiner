@@ -37,6 +37,10 @@ dependencies {
     runtimeOnly group: 'io.jsonwebtoken', name: 'jjwt-impl', version: '0.11.5'
     runtimeOnly group: 'io.jsonwebtoken', name: 'jjwt-jackson', version: '0.11.5'
 
+    implementation 'com.azure:azure-ai-vision-imageanalysis:0.15.1-beta.1'
+    implementation 'com.azure:azure-core-http-netty:1.13.6'
+    implementation 'org.slf4j:slf4j-api:2.0.7'
+    implementation 'org.slf4j:slf4j-simple:2.0.7'
 
 }
 
