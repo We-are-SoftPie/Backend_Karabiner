@@ -2,12 +2,9 @@ package com.softpie.karabiner.dto;
 
 import lombok.*;
 
-@AllArgsConstructor
-@NoArgsConstructor
-@Builder
 @Setter
 @Getter
-@ToString
+@Builder
 public class ReportDto {
     private Long id;
     private String type;

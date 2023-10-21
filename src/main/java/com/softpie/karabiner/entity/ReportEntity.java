@@ -5,11 +5,8 @@ import lombok.*;
 import javax.persistence.*;
 
 @Entity
-@Builder
-@AllArgsConstructor
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Getter
-@Setter
 @ToString
 public class ReportEntity {
     @Id
@@ -31,4 +28,16 @@ public class ReportEntity {
     private String email;
     @Column
     private String carNo;
+
+    @Builder
+    public ReportEntity(String type, String address, String title, String content, String phoneNo, String name, String email, String carNo) {
+        this.type = type;
+        this.address = address;
+        this.title = title;
+        this.content = content;
+        this.phoneNo = phoneNo;
+        this.name = name;
+        this.email = email;
+        this.carNo = carNo;
+    }
 }

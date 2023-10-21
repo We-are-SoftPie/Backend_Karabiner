@@ -14,7 +14,6 @@ public interface ReportService {
 
     default ReportEntity dtoToEntity(ReportDto dto) {
         return ReportEntity.builder()
-                .id(dto.getId())
                 .type(dto.getType())
                 .address(dto.getAddress())
                 .title(dto.getTitle())
