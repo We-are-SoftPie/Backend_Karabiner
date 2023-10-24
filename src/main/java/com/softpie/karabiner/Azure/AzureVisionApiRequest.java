@@ -45,6 +45,6 @@ public class AzureVisionApiRequest {
                 System.out.println("Error: " + errorMessage);
             }
         }
-        return null;
+        return "error";
     }
 }
