@@ -26,6 +26,11 @@ out/
 !**/src/main/**/out/
 !**/src/test/**/out/
 
+src/main/resources/application-aws.properties
+src/main/resources/application-img.properties
+src/main/resources/application-openApi.properties
+src/main/resources/application-ssl.properties
+
 ### NetBeans ###
 /nbproject/private/
 /nbbuild/
